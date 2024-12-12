@@ -16,6 +16,9 @@
 
 body {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: linear-gradient(to right top, #243c56, #274361, #2a4b6d, #2c5279, #2f5a85, #416892, #5177a0, #6286ae, #829fc0, #a3b9d2, #c5d4e4, #e7eff7);
+  font-family: var(--font-drone-ranger-pro), Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  background-color: #2a527a;
 }
+
+

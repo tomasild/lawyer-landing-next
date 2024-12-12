@@ -24,6 +24,9 @@ module.exports = {
           950: "#182739",
         },
       },
+      backgroundImage: {
+        'custom-bg': "url('/bg1.webp')",
+      },
     },
   },
   plugins: [],

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Header = () => {
   return (
-    <header className="container mx-auto py-4">
+    <header className="container mx-auto py-4 z-50">
       <nav
         aria-label="Primary Navigation"
         role="navigation"
