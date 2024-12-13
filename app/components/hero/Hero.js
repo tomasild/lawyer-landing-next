@@ -15,7 +15,7 @@ const Hero = () => {
           <div>
             <h1 className="text-[5rem] font-bold mb-4">Ayelén Paillal</h1>
             <p className="text-3xl mb-6">
-              Abogada especializada en inteligencia Artificial
+              Abogada especializada en inteligencia Artificial y Cilindros
             </p>
           </div>
           <div className="flex gap-4 justify-center">
