@@ -1,15 +1,25 @@
 import React from "react";
+import NeuralNoise from "@/app/components/backgrounds/NeuralNoise";
 
-export const Hero = () => {
+const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-b from-azul-700 to-azul-900 bg-opacity-70 py-20">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-8">
-        <div className="z-10 text-white max-w-2xl">
-          <h1 className="text-7xl font-bold mb-4">Título Principal</h1>
-          <p className="text-2xl mb-6">
-            Subtítulo descriptivo con más detalles sobre lo que ofrece.
-          </p>
-          <div className="flex gap-4">
+    <section className="relative overflow-hidden h-[100vh] mt-0 flex flex-col justify-center">
+      {/* Fondo animado con NeuralNoise */}
+      <div className="absolute inset-0 z-0">
+        <NeuralNoise />
+      </div>
+
+      {/* Contenido principal */}
+      <div className="container mx-auto flex flex-col justify-center items-center gap-8 relative z-10">
+        <article className="text-white max-w-2xl text-center">
+          <div>
+            <h1 className="text-[5rem] font-bold mb-4">Ayelén Paillal</h1>
+            <p className="text-3xl mb-6">
+              Abogada especializada en inteligencia Artificial
+            </p>
+          </div>
+          <div className="flex gap-4 justify-center">
+            {/* Botones de acción */}
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Acción 1
             </button>
@@ -17,14 +27,7 @@ export const Hero = () => {
               Acción 2
             </button>
           </div>
-        </div>
-        <div className="z-10">
-          <img
-            src="https://img.freepik.com/foto-gratis/empresaria-papel-manos_144627-258.jpg?t=st=1733964215~exp=1733967815~hmac=27c2d22364d174ef29ece6d0b4570cc95599aff46f1f50bf9967764e62e71f6&w=740"
-            alt="Descripción de la imagen"
-            className="rounded-xl shadow-lg"
-          />
-        </div>
+        </article>
       </div>
     </section>
   );

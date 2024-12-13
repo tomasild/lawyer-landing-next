@@ -4,6 +4,7 @@ import Hero from "@/app/components/hero/Hero";
 import About from "@/app/components/about/About";
 import Services from "@/app/components/services/Services";
 
+
 export default function Home() {
   return (
     <div className="flex flex-col w-full">

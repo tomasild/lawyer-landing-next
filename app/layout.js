@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${droneRangerPro.variable} antialiased`}
+        className={`${droneRangerPro.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
