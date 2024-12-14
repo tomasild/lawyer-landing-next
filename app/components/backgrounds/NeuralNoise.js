@@ -1,4 +1,4 @@
-"use client"; // Asegurándonos de que este componente sea renderizado en el cliente
+"use client"; 
 
 import { useEffect, useRef } from "react";
 
@@ -207,11 +207,11 @@ const NeuralNoiseCanvas = () => {
             return res.x + res.y;
           }
 
-          vec3 getBlueColor(float noise) {
-            // Azul dinámico según el ruido generado
+          vec3 getNeonPinkColor(float noise) {
+            // Usando tonos rosados neón claros
             return mix(
-              vec3(0.95, 0.97, 0.99),  // Azul más claro
-              vec3(0.24, 0.26, 0.34),  // Azul más oscuro
+              vec3(1.0, 0.8, 1.0),  // Rosado neón suave
+              vec3(1.0, 0.5, 0.7),  // Rosado neón intermedio
               noise
             );
           }
@@ -234,7 +234,7 @@ const NeuralNoiseCanvas = () => {
             noise = max(.0, noise - .5);
             noise *= (1. - length(vUv - .5));
 
-            color = getBlueColor(noise);
+            color = getNeonPinkColor(noise);
 
             color = color * noise;
 
