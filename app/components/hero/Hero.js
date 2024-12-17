@@ -8,9 +8,9 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden h-[100vh] mt-0 flex flex-col justify-center">
       {/* Fondo animado con NeuralNoise */}
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <NeuralNoise />
-      </div>
+      </div> */}
 
       {/* Capa de máscara con color y opacidad */}
       <div className="absolute inset-0 z-10 bg-otis-500 bg-opacity-60"></div>

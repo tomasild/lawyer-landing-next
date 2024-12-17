@@ -46,7 +46,7 @@ function Services() {
   return (
     <section className="relative bg-custom-bg bg-cover bg-center py-16">
       {/* Mask overlay */}
-      <div className="absolute inset-0 bg-otis-400 opacity-30 z-0"></div>
+      <div className="absolute inset-0 bg-otis-400 opacity-40 z-0"></div>
 
       <div className="container mx-auto relative z-10">
         <h2 className="text-5xl font-bold text-center mb-8 text-otis-950">
@@ -56,11 +56,11 @@ function Services() {
           {servicesData.map((service) => (
             <article
               key={service.id}
-              className="bg-otis-900 text-white h-64 rounded-xl shadow-md p-6 hover:shadow-xl transition duration-300"
+              className="bg-otis-900 text-white h-[15rem] overflow-hidden  shadow-md p-6 hover:shadow-xl transition duration-300"
               aria-labelledby={`service-title-${service.id}`}
             >
-              <div className="flex items-center -translate-y-6">
-                <IoBookmarkSharp size={48} />
+              <div className="flex items-center -translate-y-7">
+                <IoBookmarkSharp size={42} />
               </div>
               <h3
                 id={`service-title-${service.id}`}

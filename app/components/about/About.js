@@ -26,7 +26,7 @@ export const About = () => {
           <img
             src="https://img.freepik.com/foto-gratis/empresaria-papel-manos_144627-258.jpg?t=st=1733964215~exp=1733967815~hmac=27c2d22364d174ef29ece6d0b4570cc95599aff46f1f50bf9967764e62e71f6&w=740"
             alt="Mujer profesional trabajando en su oficina"
-            className="rounded-xl shadow-lg w-full"
+            className=" shadow-lg w-full"
           />
         </figure>
       </div>
