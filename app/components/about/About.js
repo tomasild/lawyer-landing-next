@@ -14,7 +14,7 @@ export const About = () => {
           <h2 className="text-5xl font-bold text-center text-otis-950">
             Sobre mí
           </h2>
-          <p className="text-black text-3xl max-w-2xl text-balance">
+          <p className="text-black text-3xl max-w-2xl text-balance leading-relaxed drop-shadow-lg">
             Soy una abogada especializada en inteligencia artificial y
             cilindros. Mi experiencia en la industria de la vida me ha permitido
             desarrollar habilidades en el campo de la inteligencia artificial y

@@ -20,7 +20,7 @@ export const Header = () => {
 
           <ul
             id="primary-menu"
-            className="hidden md:flex items-center space-x-6 text-white font-bold"
+            className="hidden md:flex text-2xl items-center space-x-6 text-white font-bold"
             role="menu"
           >
             <li role="none">

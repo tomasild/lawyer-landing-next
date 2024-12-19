@@ -8,9 +8,9 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden h-[100vh] mt-0 flex flex-col justify-center">
       {/* Fondo animado con NeuralNoise */}
-      {/* <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0">
         <NeuralNoise />
-      </div> */}
+      </div>
 
       {/* Capa de máscara con color y opacidad */}
       <div className="absolute inset-0 z-10 bg-otis-500 bg-opacity-60"></div>
@@ -27,10 +27,10 @@ const Hero = () => {
               Product Designer | UX Engineer | UX Designer
             </p>
           </div>
-          <div className="flex gap-4 justify-center">
-            <IoLogoWhatsapp size={48} className="cursor-pointer" />
-            <RiInstagramFill size={48} className="cursor-pointer" />
-            <IoLogoTiktok size={48} className="cursor-pointer" />
+          <div className="flex gap-6 justify-center">
+            <IoLogoWhatsapp size={64} className="cursor-pointer hover:text-otis-400 " />
+            <RiInstagramFill size={64} className="cursor-pointer hover:text-otis-400 " />
+            <IoLogoTiktok size={64} className="cursor-pointer hover:text-otis-400 " />
           </div>
         </article>
       </div>

@@ -31,7 +31,7 @@ const FaqItem = ({ faq, index, isOpen, onToggle }) => {
         </button>
       </h3>
       <div
-        className={`overflow-hidden bg-otis-600 text-white transition-max-height duration-300 ease-in-out ${
+        className={`overflow-hidden bg-otis-600 text-white text-2xl leading-relaxed drop-shadow-l transition-max-height duration-300 ease-in-out ${
           isOpen ? "max-h-[500px] p-4" : "max-h-0 p-0"
         }`}
       >

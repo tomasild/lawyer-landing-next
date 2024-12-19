@@ -4,6 +4,7 @@ import Hero from "@/app/components/hero/Hero";
 import About from "@/app/components/about/About";
 import Services from "@/app/components/services/Services";
 import Faq from "@/app/components/faq/Faq";
+import Quote from "@/app/components/quote/Quote";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <Services />
         <About />
+        <Quote />
         <Faq />
       </main>
       <Footer />
