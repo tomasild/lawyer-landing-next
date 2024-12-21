@@ -3,7 +3,7 @@ import { GiArtificialHive } from "react-icons/gi";
 
 export const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 py-4 px-6 bg-transparent shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-50 py-1 px-2 md:py-4 md:px-6 bg-transparent shadow-md">
       <nav
         aria-label="Primary Navigation"
         role="navigation"
@@ -12,10 +12,10 @@ export const Header = () => {
         <div className="container mx-auto flex items-center justify-between p-4">
           <a
             href="/"
-            className="flex items-center ml-2"
+            className="flex items-center ml-2 text-2xl md:text-5xl"
             aria-label="Go to homepage"
           >
-            <GiArtificialHive size={48} />
+            <GiArtificialHive />
           </a>
 
           <ul
@@ -59,10 +59,10 @@ export const Header = () => {
           </ul>
           <a
             href="/"
-            className="flex items-center mr-2"
+            className="flex items-center mr-2 text-2xl md:text-5xl"
             aria-label="Go to homepage"
           >
-            <GiArtificialHive size={48} />
+            <GiArtificialHive />
           </a>
         </div>
       </nav>

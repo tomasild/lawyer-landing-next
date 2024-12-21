@@ -8,19 +8,19 @@ const FaqItem = ({ faq, index, isOpen, onToggle }) => {
   const faqId = `faq-${index}`;
   return (
     <li
-      className="border  w-full bg-otis-800 shadow-lg"
+      className="border w-full bg-otis-800 shadow-lg"
       role="region"
       aria-label={`Pregunta ${index + 1}`}
     >
-      <h3 id={faqId}>
+      <h3 id={faqId} className="text-[1.2rem] md:text-[2rem]">
         <button
           type="button"
-          className="w-full text-left text-xl md:text-2xl font-bold text-white bg-otis-600 p-4 rounded-lg flex justify-between items-center transition duration-200 focus:ring-2 focus:ring-inset focus:ring-otis-200 focus:ring-offset-1"
+          className="w-full text-left font-bold text-white bg-otis-600 p-4 rounded-lg flex justify-between items-center transition duration-200 focus:ring-2 focus:ring-inset focus:ring-otis-200 focus:ring-offset-1"
           onClick={() => onToggle(index)}
           aria-expanded={isOpen}
           aria-labelledby={faqId}
         >
-          <span>{faq.question}</span>
+          <span className="text-[1.2rem] md:text-[2rem]">{faq.question}</span>
           <span>
             {isOpen ? (
               <HiChevronUp className="text-white text-xl md:text-2xl transition duration-200" />
@@ -31,7 +31,7 @@ const FaqItem = ({ faq, index, isOpen, onToggle }) => {
         </button>
       </h3>
       <div
-        className={`overflow-hidden bg-otis-600 text-white text-2xl leading-relaxed drop-shadow-l transition-max-height duration-300 ease-in-out ${
+        className={`overflow-hidden bg-otis-600 text-white text-[0.9rem] md:text-[1.2rem] leading-relaxed drop-shadow-l transition-max-height duration-300 ease-in-out ${
           isOpen ? "max-h-[500px] p-4" : "max-h-0 p-0"
         }`}
       >
@@ -77,7 +77,7 @@ const Faq = () => {
   };
 
   return (
-    <section className="relative bg-otis-300 py-20">
+    <section className="relative bg-otis-300 py-10 md:py-20 px-4 md:px-0">
       <div className="container mx-auto relative z-10 flex gap-10 flex-col lg:flex-row items-start justify-between">
         {/* <figure>
           <img
@@ -86,8 +86,8 @@ const Faq = () => {
             className="rounded-xl shadow-lg w-full"
           />
         </figure> */}
-        <article className="flex flex-col items-start space-y-8 w-full lg:w-2/3">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-otis-950">
+        <article className="flex flex-col items-start space-y-4 md:space-y-8 w-full lg:w-2/3 ">
+          <h2 className="text-[2rem] md:text-[4rem] font-bold text-center text-otis-950">
             Preguntas Frecuentes
           </h2>
           <ul className="space-y-4 w-full">

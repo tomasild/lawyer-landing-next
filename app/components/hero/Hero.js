@@ -19,18 +19,18 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col justify-center items-center gap-8 relative z-10">
         <article className="text-white  text-center">
           <div>
-            <h1 className="w-full text-[5rem] font-bold mb-4">¡Hola!, soy Ayelén</h1>
-            <p className="text-3xl mb-6 text-balance">
+            <h1 className="w-full text-[2rem] md:text-[5rem] font-bold mb-4">¡Hola!, soy Ayelén</h1>
+            <p className="text-[1rem] md:text-[2.5rem] mb-6 text-balance">
               Una Abogada especializada en inteligencia Artificial y Doglover
             </p>
-            <p className="text-3xl mb-6 text-balance">
+            <p className="text-[1rem] md:text-[2.5rem] font-bold  mb-6 text-balance">
               Product Designer | UX Engineer | UX Designer
             </p>
           </div>
           <div className="flex gap-6 justify-center">
-            <IoLogoWhatsapp size={64} className="cursor-pointer hover:text-otis-400 " />
-            <RiInstagramFill size={64} className="cursor-pointer hover:text-otis-400 " />
-            <IoLogoTiktok size={64} className="cursor-pointer hover:text-otis-400 " />
+            <IoLogoWhatsapp className="text-[2rem] md:text-[4rem]  cursor-pointer hover:text-otis-400 " />
+            <RiInstagramFill className="text-[2rem] md:text-[4rem]  cursor-pointer hover:text-otis-400 " />
+            <IoLogoTiktok className="text-[2rem] md:text-[4rem]  cursor-pointer hover:text-otis-400 " />
           </div>
         </article>
       </div>

@@ -49,26 +49,26 @@ function Services() {
       <div className="absolute inset-0 bg-otis-400 opacity-40 z-0"></div>
 
       <div className="container mx-auto relative z-10">
-        <h2 className="text-5xl font-bold text-center mb-8 text-otis-950">
+        <h2 className="text-[2rem] md:text-[4rem] font-bold text-center mb-8 text-otis-950">
           Servicios
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-4 md:mx-0">
           {servicesData.map((service) => (
             <article
               key={service.id}
-              className="bg-otis-900 text-white h-[15rem] overflow-hidden  shadow-md p-6 hover:shadow-xl transition duration-300"
+              className="bg-otis-900 text-white h-[10rem] md:h-[16rem] overflow-hidden shadow-md p-6 hover:shadow-xl transition duration-300"
               aria-labelledby={`service-title-${service.id}`}
             >
-              <div className="flex items-center -translate-y-7">
-                <IoBookmarkSharp size={42} />
+              <div className="flex items-center -translate-y-7 text-[2rem] md:text-[3rem]">
+                <IoBookmarkSharp />
               </div>
               <h3
                 id={`service-title-${service.id}`}
-                className="text-2xl font-bold mb-2 py-4"
+                className="text-[1.2rem] md:text-[2rem] font-bold mb-2 -translate-y-2"
               >
                 {service.title}
               </h3>
-              <p className="text-lg">{service.description}</p>
+              <p className="text-[0.9rem] md:text-[1.2rem]">{service.description}</p>
             </article>
           ))}
         </div>
