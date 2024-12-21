@@ -56,7 +56,7 @@ function Services() {
           {servicesData.map((service) => (
             <article
               key={service.id}
-              className="bg-otis-900 text-white h-[10rem] md:h-[16rem] overflow-hidden shadow-md p-6 hover:shadow-xl transition duration-300"
+              className="bg-otis-900 text-white h-[12rem] md:h-[16rem] overflow-hidden shadow-md p-6 hover:shadow-xl transition duration-300"
               aria-labelledby={`service-title-${service.id}`}
             >
               <div className="flex items-center -translate-y-7 text-[2rem] md:text-[3rem]">

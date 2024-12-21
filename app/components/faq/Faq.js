@@ -20,7 +20,7 @@ const FaqItem = ({ faq, index, isOpen, onToggle }) => {
           aria-expanded={isOpen}
           aria-labelledby={faqId}
         >
-          <span className="text-[1.2rem] md:text-[2rem]">{faq.question}</span>
+          <span className="text-[1.2rem] md:text-[2rem] pr-4">{faq.question}</span>
           <span>
             {isOpen ? (
               <HiChevronUp className="text-white text-xl md:text-2xl transition duration-200" />
@@ -77,15 +77,11 @@ const Faq = () => {
   };
 
   return (
-    <section id="faq" className="relative bg-otis-300 py-10 md:py-20 px-4 md:px-0">
+    <section
+      id="faq"
+      className="relative bg-otis-300 py-10 md:py-20 px-4 md:px-0"
+    >
       <div className="container mx-auto relative z-10 flex gap-10 flex-col lg:flex-row items-start justify-between">
-        {/* <figure>
-          <img
-            src="https://img.freepik.com/foto-gratis/empresaria-papel-manos_144627-258.jpg?t=st=1733964215~exp=1733967815~hmac=27c2d22364d174ef29ece6d0b4570cc95599aff46f1f50bf9967764e62e71f6&w=740"
-            alt="Mujer profesional trabajando en su oficina"
-            className="rounded-xl shadow-lg w-full"
-          />
-        </figure> */}
         <article className="flex flex-col items-start space-y-4 md:space-y-8 w-full lg:w-2/3 ">
           <h2 className="text-[2rem] md:text-[4rem] font-bold text-center text-otis-950">
             Preguntas Frecuentes
