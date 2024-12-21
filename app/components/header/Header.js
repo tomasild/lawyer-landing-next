@@ -1,69 +1,113 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
 import { GiArtificialHive } from "react-icons/gi";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 py-1 px-2 md:py-4 md:px-6 bg-transparent shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent shadow-md m-2 md:mx-0">
       <nav
         aria-label="Primary Navigation"
-        role="navigation"
-        className="container mx-auto rounded-full bg-otis-950 bg-opacity-70"
+        className="container mx-auto bg-otis-950 bg-opacity-70"
       >
-        <div className="container mx-auto flex items-center justify-between p-4">
-          <a
+        <div className="flex items-center justify-between p-4">
+          {/* Logo */}
+          <Link
             href="/"
-            className="flex items-center ml-2 text-2xl md:text-5xl"
             aria-label="Go to homepage"
+            className="text-2xl md:text-5xl"
           >
             <GiArtificialHive />
-          </a>
+          </Link>
 
+          {/* Hamburger Button for Mobile */}
+          <button
+            className="flex md:hidden text-white text-2xl"
+            aria-label="Toggle menu"
+            onClick={toggleMenu}
+          >
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+
+          {/* Navigation Menu */}
           <ul
             id="primary-menu"
-            className="hidden md:flex text-2xl items-center space-x-6 text-white font-bold"
+            className={`${
+              menuOpen ? "flex" : "hidden"
+            } flex-col border-t border-otis-100 border-opacity-50 space-y-4 py-4 md:py-0 md:space-y-0 md:flex md:flex-row items-center md:space-x-6 text-lg text-white font-bold bg-otis-950 bg-opacity-70 md:bg-transparent w-full md:w-auto absolute md:relative top-full left-0 md:top-0 md:left-auto shadow-lg md:shadow-none`}
             role="menu"
           >
             <li role="none">
-              <a
-                href="/about"
+              <Link
+                href="#services"
                 role="menuitem"
-                className="px-4 py-3 rounded-full hover:bg-otis-700"
-              >
-                Sobre mi
-              </a>
-            </li>
-            <li role="none">
-              <span className="text-2xl font-bold">·</span>
-            </li>
-            <li role="none">
-              <a
-                href="/services"
-                role="menuitem"
-                className="px-4 py-3 rounded-full hover:bg-otis-700"
+                className="px-4 py-3 hover:bg-otis-700 w-full text-center md:w-auto"
+                onClick={() => setMenuOpen(false)}
               >
                 Servicios
-              </a>
+              </Link>
             </li>
-            <li role="none">
+            <li role="none" className="hidden md:block">
               <span className="text-2xl font-bold">·</span>
             </li>
             <li role="none">
-              <a
-                href="/contact"
+              <Link
+                href="#about"
                 role="menuitem"
-                className="px-4 py-3 rounded-full hover:bg-otis-700"
+                className="px-4 py-3 hover:bg-otis-700 w-full text-center md:w-auto"
+                onClick={() => setMenuOpen(false)}
+              >
+                Sobre mi
+              </Link>
+            </li>
+            <li role="none" className="hidden md:block">
+              <span className="text-2xl font-bold">·</span>
+            </li>
+            <li role="none">
+              <Link
+                href="#quote"
+                role="menuitem"
+                className="px-4 py-3 hover:bg-otis-700 w-full text-center md:w-auto"
+                onClick={() => setMenuOpen(false)}
+              >
+                Citas
+              </Link>
+            </li>
+            <li role="none" className="hidden md:block">
+              <span className="text-2xl font-bold">·</span>
+            </li>
+            <li role="none">
+              <Link
+                href="#faq"
+                role="menuitem"
+                className="px-4 py-3 hover:bg-otis-700 w-full text-center md:w-auto"
+                onClick={() => setMenuOpen(false)}
+              >
+                FAQ
+              </Link>
+            </li>
+            <li role="none" className="hidden md:block">
+              <span className="text-2xl font-bold">·</span>
+            </li>
+            <li role="none">
+              <Link
+                href="#contact"
+                role="menuitem"
+                className="px-4 py-3 hover:bg-otis-700 w-full text-center md:w-auto"
+                onClick={() => setMenuOpen(false)}
               >
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
-          <a
-            href="/"
-            className="flex items-center mr-2 text-2xl md:text-5xl"
-            aria-label="Go to homepage"
-          >
-            <GiArtificialHive />
-          </a>
         </div>
       </nav>
     </header>

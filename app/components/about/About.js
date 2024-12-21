@@ -1,9 +1,10 @@
 import React from "react";
 import { GiScales } from "react-icons/gi";
+import Image from "next/image";
 
 export const About = () => {
   return (
-    <section className="relative bg-otis-300 pt-10 pb-20 md:py-20">
+    <section id="about" className="relative bg-otis-300 pt-10 pb-20 md:py-20">
       {/* Fondo opcional con gradiente */}
       {/* <div className="absolute inset-0 bg-gradient-to-b from-black to-otis-900 bg-opacity-20"></div> */}
       <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-start gap-4 justify-between">
@@ -22,12 +23,17 @@ export const About = () => {
             complejos.
           </p>
         </article>
-        <figure className="hidden md:flex">
-          <img
-            src="https://img.freepik.com/foto-gratis/empresaria-papel-manos_144627-258.jpg?t=st=1733964215~exp=1733967815~hmac=27c2d22364d174ef29ece6d0b4570cc95599aff46f1f50bf9967764e62e71f6&w=740"
-            alt="Mujer profesional trabajando en su oficina"
-            className=" shadow-lg w-full"
-          />
+        <figure className="mx-4 md:mx-0 flex justify-center items-center">
+
+        <Image
+          src="/bg1.webp"
+          alt="Abogada"
+          width={1200} // Ancho máximo de la imagen
+          height={800} // Alto máximo de la imagen
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover"
+          priority
+        />
         </figure>
       </div>
     </section>

@@ -30,11 +30,11 @@ const NeuralNoiseCanvas = () => {
     const vsSource = document.getElementById("vertShader").innerHTML;
     const fsSource = document.getElementById("fragShader").innerHTML;
 
-    const gl =
-      canvasEl.getContext("webgl") || canvasEl.getContext("experimental-webgl");
+    const gl = canvasEl.getContext("webgl") || canvasEl.getContext("experimental-webgl");
 
     if (!gl) {
       alert("WebGL is not supported by your browser.");
+      return;
     }
 
     function createShader(gl, sourceCode, type) {
@@ -44,8 +44,7 @@ const NeuralNoiseCanvas = () => {
 
       if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
         console.error(
-          "An error occurred compiling the shaders: " +
-            gl.getShaderInfoLog(shader)
+          "An error occurred compiling the shaders: " + gl.getShaderInfoLog(shader)
         );
         gl.deleteShader(shader);
         return null;
@@ -65,8 +64,7 @@ const NeuralNoiseCanvas = () => {
 
       if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
         console.error(
-          "Unable to initialize the shader program: " +
-            gl.getProgramInfoLog(program)
+          "Unable to initialize the shader program: " + gl.getProgramInfoLog(program)
         );
         return null;
       }
@@ -78,8 +76,8 @@ const NeuralNoiseCanvas = () => {
     uniformsRef.current = getUniforms(shaderProgram);
 
     function getUniforms(program) {
-      let uniforms = [];
-      let uniformCount = gl.getProgramParameter(program, gl.ACTIVE_UNIFORMS);
+      let uniforms = {};
+      const uniformCount = gl.getProgramParameter(program, gl.ACTIVE_UNIFORMS);
       for (let i = 0; i < uniformCount; i++) {
         let uniformName = gl.getActiveUniform(program, i).name;
         uniforms[uniformName] = gl.getUniformLocation(program, uniformName);
@@ -142,10 +140,7 @@ const NeuralNoiseCanvas = () => {
     });
 
     window.addEventListener("touchmove", (e) => {
-      updateMousePosition(
-        e.targetTouches[0].clientX,
-        e.targetTouches[0].clientY
-      );
+      updateMousePosition(e.targetTouches[0].clientX, e.targetTouches[0].clientY);
     });
 
     window.addEventListener("click", (e) => {
@@ -208,7 +203,6 @@ const NeuralNoiseCanvas = () => {
           }
 
           vec3 getNeonPinkColor(float noise) {
-            // Usando tonos rosados neón claros
             return mix(
               vec3(1.0, 0.8, 1.0),  // Rosado neón suave
               vec3(1.0, 0.5, 0.7),  // Rosado neón intermedio

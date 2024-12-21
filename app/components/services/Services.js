@@ -44,7 +44,7 @@ const servicesData = [
 
 function Services() {
   return (
-    <section className="relative bg-custom-bg bg-cover bg-center py-16">
+    <section id="services" className="relative bg-custom-bg bg-cover bg-center py-16">
       {/* Mask overlay */}
       <div className="absolute inset-0 bg-otis-400 opacity-40 z-0"></div>
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Quote = () => {
   return (
-    <div className="bg-palace bg-cover bg-center py-16 relative bg-fixed">
+    <div id="quote" className="bg-palace bg-cover bg-center py-16 relative bg-fixed">
       {/* Mask overlay */}
       <div className="absolute inset-0 bg-otis-900 opacity-60 z-0"></div>
       <div className="max-w-4xl mx-4 md:mx-auto text-center relative z-10">
@@ -14,9 +14,9 @@ const Quote = () => {
           El Derecho de Familia y la Anticipación
         </h2>
         <p className="text-[0.9rem] md:text-[1.2rem] text-otis-100 text-balanceleading-relaxed drop-shadow-lg">
-          "La ley debe anticipar los impactos de la IA, en lugar de reaccionar a
+          La ley debe anticipar los impactos de la IA, en lugar de reaccionar a
           ellos, para evitar un vacío legal que ponga en riesgo los derechos
-          fundamentales." - Ryan Calo.
+          fundamentales. - Ryan Calo.
         </p>
         <div className="mt-12">
           <button className="bg-otis-600 text-white py-2 px-6 hover:bg-otis-900 transition-colors duration-300">

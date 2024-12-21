@@ -77,7 +77,7 @@ const Faq = () => {
   };
 
   return (
-    <section className="relative bg-otis-300 py-10 md:py-20 px-4 md:px-0">
+    <section id="faq" className="relative bg-otis-300 py-10 md:py-20 px-4 md:px-0">
       <div className="container mx-auto relative z-10 flex gap-10 flex-col lg:flex-row items-start justify-between">
         {/* <figure>
           <img
