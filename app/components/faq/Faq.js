@@ -15,7 +15,7 @@ const FaqItem = ({ faq, index, isOpen, onToggle }) => {
       <h3 id={faqId} className="text-[1.2rem] md:text-[2rem]">
         <button
           type="button"
-          className="w-full text-left font-bold text-white bg-otis-600 p-4 rounded-lg flex justify-between items-center transition duration-200 focus:ring-2 focus:ring-inset focus:ring-otis-200 focus:ring-offset-1"
+          className="w-full text-left font-bold text-white bg-otis-900 p-4 rounded-lg flex justify-between items-center transition duration-200 focus:ring-2 focus:ring-inset focus:ring-otis-200 focus:ring-offset-1"
           onClick={() => onToggle(index)}
           aria-expanded={isOpen}
           aria-labelledby={faqId}
@@ -31,7 +31,7 @@ const FaqItem = ({ faq, index, isOpen, onToggle }) => {
         </button>
       </h3>
       <div
-        className={`overflow-hidden bg-otis-600 text-white text-[0.9rem] md:text-[1.2rem] leading-relaxed drop-shadow-l transition-max-height duration-300 ease-in-out ${
+        className={`overflow-hidden bg-otis-900 text-white text-[0.9rem] md:text-[1.2rem] leading-relaxed drop-shadow-l transition-max-height duration-300 ease-in-out ${
           isOpen ? "max-h-[500px] p-4" : "max-h-0 p-0"
         }`}
       >

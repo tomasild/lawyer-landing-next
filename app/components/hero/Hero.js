@@ -20,10 +20,6 @@ const Hero = () => {
           Tu navegador no soporta el formato de video.
         </video>
       </div>
-
-      {/* Capa de máscara con color y opacidad */}
-      <div className="absolute inset-0 z-10 bg-otis-900 bg-opacity-30"></div>
-
       {/* Contenido principal */}
       <div className="container mx-auto flex flex-col justify-center items-center gap-8 relative z-10">
         <article className="text-white text-center">

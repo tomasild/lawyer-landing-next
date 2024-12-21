@@ -78,7 +78,7 @@ export const Header = () => {
                 className="px-4 py-3 hover:bg-otis-700 w-full text-center md:w-auto"
                 onClick={() => setMenuOpen(false)}
               >
-                Citas
+                Misión
               </Link>
             </li>
             <li role="none" className="hidden md:block">

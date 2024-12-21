@@ -30,3 +30,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+#quote {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  transition: background-position 0.2s ease-in-out;
+}
+
+@media (min-width: 1024px) {
+  #quote {
+    background-position: center center;
+  }
+}
