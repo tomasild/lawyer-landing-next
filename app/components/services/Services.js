@@ -46,7 +46,7 @@ function Services() {
   return (
     <section id="services" className="relative bg-custom-bg bg-cover bg-center py-16">
       {/* Mask overlay */}
-      <div className="absolute inset-0 bg-otis-400 opacity-40 z-0"></div>
+      <div className="absolute inset-0 bg-otis-100 opacity-30 z-0"></div>
 
       <div className="container mx-auto relative z-10">
         <h2 className="text-[2rem] md:text-[4rem] font-bold text-center mb-8 text-otis-950">

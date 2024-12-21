@@ -79,7 +79,7 @@ const Faq = () => {
   return (
     <section
       id="faq"
-      className="relative bg-otis-300 py-10 md:py-20 px-4 md:px-0"
+      className="relative bg-otis-100 py-10 md:py-20 px-4 md:px-0"
     >
       <div className="container mx-auto relative z-10 flex gap-10 flex-col lg:flex-row items-start justify-between">
         <article className="flex flex-col items-start space-y-4 md:space-y-8 w-full lg:w-2/3 ">

@@ -4,9 +4,7 @@ import Image from "next/image";
 
 export const About = () => {
   return (
-    <section id="about" className="relative bg-otis-300 pt-10 pb-20 md:py-20">
-      {/* Fondo opcional con gradiente */}
-      {/* <div className="absolute inset-0 bg-gradient-to-b from-black to-otis-900 bg-opacity-20"></div> */}
+    <section id="about" className="relative bg-otis-100 pt-10 pb-20 md:py-20">
       <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-start gap-4 justify-between">
         <article className="flex flex-col items-center md:items-start space-y-4 md:space-y-8 mx-4 md:mx-0">
           <div className="bg-otis-800 p-4 rounded-full flex items-center justify-center text-[2rem] md:text-[5rem]">
