@@ -4,18 +4,20 @@ import Hero from "@/app/components/hero/Hero";
 import About from "@/app/components/about/About";
 import Services from "@/app/components/services/Services";
 import Faq from "@/app/components/faq/Faq";
-import Quote from "@/app/components/quote/Quote";
+import Purpose from "@/app/components/purpose/Purpose";
+import Cta from "@/app/components/cta/Cta";
 
 export default function Home() {
   return (
     <div className="flex flex-col w-full">
       <Header />
-      <main className="">
+      <main>
         <Hero />
-        <Services />
         <About />
-        <Quote />
+        <Purpose />
+        <Services />
         <Faq />
+        <Cta />
       </main>
       <Footer />
     </div>

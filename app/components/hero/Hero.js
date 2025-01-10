@@ -20,18 +20,17 @@ const Hero = () => {
           Tu navegador no soporta el formato de video.
         </video>
       </div>
-      {/* Contenido principal */}
+
       <div className="container mx-auto flex flex-col justify-center items-center gap-8 relative z-10">
         <article className="text-white text-center">
           <div>
             <h1 className="w-full text-[2rem] md:text-[5rem] font-bold mb-4">
-              ¡Hola!, soy Ayelén
+              ¡Hola!, soy Ayelén Paillal
             </h1>
-            <p className="text-[1rem] md:text-[2.5rem] mb-6 text-balance">
-              Una Abogada especializada en inteligencia Artificial y Doglover
-            </p>
             <p className="text-[1rem] md:text-[2.5rem] font-bold mb-6 text-balance">
-              Product Designer | UX Engineer | UX Designer
+              Abogada | Especialista en inteligencia artificial | Investigadora
+              de implicaciones legales de la IA | Asesoría legal en áreas de
+              derecho civil, familiar y tecnológico.
             </p>
           </div>
           <div className="flex gap-6 justify-center">

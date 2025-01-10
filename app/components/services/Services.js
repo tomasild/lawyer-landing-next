@@ -24,22 +24,7 @@ const servicesData = [
     title: "Derecho laboral",
     description: "Despidos, indemnizaciones, reclamos laborales.",
   },
-  {
-    id: 5,
-    title: "Protección al consumidor",
-    description: "Defensa de tus derechos como consumidor.",
-  },
-  {
-    id: 6,
-    title: "Extranjería y migración",
-    description: "Trámites migratorios, residencia, ciudadanía.",
-  },
-  {
-    id: 7,
-    title: "Derecho de la propiedad",
-    description:
-      "Contratos, arrendamientos, cobros, etc. Representación legal en juicio.",
-  },
+
 ];
 
 function Services() {
