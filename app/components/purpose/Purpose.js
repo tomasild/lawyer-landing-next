@@ -16,12 +16,16 @@ const Purpose = () => {
           Derecho y tecnología, aliados en tu camino.
         </h2>
         <p className="text-[0.9rem] md:text-[1.2rem] text-otis-100 text-balance leading-relaxed drop-shadow-lg pb-10 md:pb-20">
-          Como abogada especializada en inteligencia artificial, mi misión es
-          investigar y abordar las implicaciones legales, éticas y sociales de
-          la IA, con el objetivo de crear soluciones legales que promuevan una
-          regulación adecuada y justa. Me enfoco en temas como sesgos,
-          regulación y el impacto social de la IA, trabajando para construir un
-          sistema jurídico más consciente y adaptado a los avances tecnológicos.
+          Mi misión es explorar y compartir las implicancias legales, éticas y
+          regulatorias de la Inteligencia Artificial, combinando mi formación en
+          Derecho y Tecnología con mi pasión por las nuevas tecnologías. A
+          través de la creación de contenido especializado, busco fomentar la
+          alfabetización digital y generar un impacto positivo en la comprensión
+          pública de los avances tecnológicos. Como investigadora y ayudante de
+          la cátedra de Derecho y Tecnología en la Universidad de Valparaíso, mi
+          compromiso es ofrecer información clara y accesible para que más
+          personas comprendan el impacto de la IA en la sociedad y el entorno
+          legal.
         </p>
       </div>
     </div>

@@ -20,7 +20,9 @@ const FaqItem = ({ faq, index, isOpen, onToggle }) => {
           aria-expanded={isOpen}
           aria-labelledby={faqId}
         >
-          <span className="text-[1.2rem] md:text-[1.5rem] pr-4">{faq.question}</span>
+          <span className="text-[1.2rem] md:text-[1.5rem] pr-4">
+            {faq.question}
+          </span>
           <span>
             {isOpen ? (
               <HiChevronUp className="text-white text-xl md:text-2xl transition duration-200" />
@@ -46,29 +48,42 @@ const Faq = () => {
 
   const faqs = [
     {
-      question: "¿Cuánto tiempo tarda un caso en resolverse?",
+      question: "¿Qué servicios ofrezco en asesoría jurídica?",
       answer:
-        "El tiempo de resolución varía según la complejidad del caso y la jurisdicción correspondiente.",
+        "Ofrezco asesoría jurídica integral en diversas ramas del derecho, con un enfoque especial en la intersección entre derecho y tecnología. Mis servicios incluyen, pero no se limitan a, consultoría en contratos tecnológicos, protección de datos, propiedad intelectual y cumplimiento normativo relacionado con tecnologías emergentes como la Inteligencia Artificial.",
     },
     {
-      question: "¿Cuáles son los honorarios iniciales?",
+      question: "¿Cómo te ayudo con la relación entre derecho y tecnología?",
       answer:
-        "Los honorarios iniciales dependen del tipo de caso. Se realiza una consulta inicial gratuita para discutir los detalles.",
+        "Me especializo en el asesoramiento legal sobre las implicaciones jurídicas de las nuevas tecnologías. Esto incluye desde la protección de datos personales hasta la regulación de inteligencia artificial, ayudándote a entender los marcos legales que afectan tu negocio o proyecto en el ámbito tecnológico.",
     },
     {
-      question: "¿Mis datos estarán protegidos?",
+      question:
+        "¿Qué tipo de asesoría proporciono para la inteligencia artificial?",
       answer:
-        "Sí, toda la información compartida con nosotros está completamente protegida y es confidencial.",
+        "Proporciono asesoría legal específica sobre el uso de la Inteligencia Artificial, desde su implementación en proyectos hasta su regulación legal. Esto incluye la protección de propiedad intelectual, cumplimiento con normativas internacionales de privacidad y riesgos legales asociados al uso de IA.",
     },
     {
-      question: "¿Ofrecen consultas virtuales?",
+      question: "¿Realizo capacitaciones o formación legal?",
       answer:
-        "Sí, ofrecemos consultas virtuales para mayor comodidad de nuestros clientes.",
+        "Sí, ofrezco capacitaciones personalizadas sobre el impacto legal de las tecnologías emergentes. Mis talleres están diseñados para profesionales y empresas que buscan comprender mejor los aspectos legales de la tecnología y la innovación, con un enfoque práctico y aplicable.",
     },
     {
-      question: "¿Pueden ayudarme con un caso de divorcio?",
+      question:
+        "¿Cómo garantizo la seguridad de los datos que compartes conmigo?",
       answer:
-        "Si, ofrecemos asesoramiento legal especializado en divorcios y custodia de menores.",
+        "La protección de tus datos es una prioridad. Implemento medidas de seguridad robustas para garantizar que toda la información que compartes conmigo sea confidencial y esté protegida, de acuerdo con las normativas más estrictas de privacidad y seguridad.",
+    },
+    {
+      question: "¿Puedo realizar consultas virtuales?",
+      answer:
+        "Sí, ofrezco consultas virtuales a través de plataformas seguras y accesibles. De este modo, puedes recibir la asesoría que necesitas sin importar tu ubicación, de manera cómoda y eficaz.",
+    },
+    {
+      question:
+        "¿Qué recursos proporciono sobre la regulación de la inteligencia artificial?",
+      answer:
+        "Regularmente comparto contenido actualizado sobre los marcos legales que regulan la Inteligencia Artificial, tanto a nivel nacional como internacional. Mi enfoque es mantenerte informado sobre los aspectos éticos y legales que afectan la adopción de tecnologías innovadoras.",
     },
   ];
 

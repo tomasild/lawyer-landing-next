@@ -5,7 +5,7 @@ import { IoLogoTiktok, IoLogoLinkedin } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className="bg-otis-100 text-otis-950 py-8">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <section className="mb-6 md:mb-0 text-center md:text-left">
           <h2 className="text-[1.2rem] md:text-[1.5rem] font-bold mb-2">
@@ -34,7 +34,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="WhatsApp"
           >
-            <IoLogoWhatsapp className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer hover:text-otis-400 transition-all" />
+            <IoLogoWhatsapp className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer text-green-600 hover:scale-125 transition-all" />
           </a>
           <a
             href="https://instagram.com/yourprofile"
@@ -42,7 +42,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="Instagram"
           >
-            <RiInstagramFill className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer hover:text-otis-400 transition-all" />
+            <RiInstagramFill className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer text-fuchsia-600 hover:scale-125 transition-all" />
           </a>
           <a
             href="https://tiktok.com/@yourprofile"
@@ -50,7 +50,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="TikTok"
           >
-            <IoLogoTiktok className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer hover:text-otis-400 transition-all" />
+            <IoLogoTiktok className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer text-pink-500 hover:scale-125 transition-all" />
           </a>
           <a
             href="https://tiktok.com/@yourprofile"
@@ -58,7 +58,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="TikTok"
           >
-            <IoLogoLinkedin className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer hover:text-otis-400 transition-all" />
+            <IoLogoLinkedin className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer text-otis-600 hover:scale-125 transition-all" />
           </a>
         </section>
       </div>

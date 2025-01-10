@@ -5,21 +5,26 @@ const Cta = () => {
   return (
     <section
       id="contact"
-      className="bg-otis-950 text-white py-14 px-4 sm:px-6 lg:px-8"
+      className="bg-contacto bg-cover bg-center text-white py-14 px-4 sm:px-6 lg:px-8 relative" // Añadí 'relative' para que el z-index funcione
       aria-labelledby="cta-heading"
     >
-      <div className="max-w-4xl mx-auto text-center">
+      {/* Capa de máscara */}
+      <div className="absolute inset-0 bg-otis-950 opacity-50 z-10"></div>{" "}
+      {/* Capa con menor z-index para estar debajo del contenido */}
+      {/* Contenido principal */}
+      <div className="relative z-20 max-w-4xl mx-auto text-center">
+        {" "}
+        {/* Añadí 'relative z-20' para que el contenido quede por encima de la capa */}
         <h2
           id="cta-heading"
           className="text-[2rem] md:text-[3rem] leading-tight text-pretty"
         >
-          ¿Necesitas asesoría legal en tecnología o asuntos civiles?
+          ¿Necesitas asesoría sobre las implicancias legales de la tecnología?
         </h2>
         <p className="mt-4 text-[0.9rem] md:text-[1.2rem] leading-relaxed text-pretty">
-          Como abogada especializada en inteligencia artificial e implicaciones
-          legales, éticas y sociales, estoy aquí para ofrecerte asesoría
-          personalizada. Ya sea en temas tecnológicos, derecho civil o familiar,
-          mi enfoque se adapta a tus necesidades legales.
+          Como especialista en Derecho y Tecnología, te ayudo a entender y
+          abordar los retos legales que trae la innovación, como la Inteligencia
+          Artificial. Contáctame ahora y obtén la orientación legal que necesitas.
         </p>
         <div className="mt-8 flex justify-center">
           <Link href="#contacto">

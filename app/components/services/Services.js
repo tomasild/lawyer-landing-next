@@ -1,32 +1,32 @@
 import React from "react";
 import { IoBookmarkSharp } from "react-icons/io5";
-
 const servicesData = [
   {
     id: 1,
-    title: "Delitos penales",
+    title: "Asesoría jurídica",
     description:
-      "Asesoramiento integral desde la primera consulta hasta la etapa final del proceso penalAsesoramiento integral desde la primera consulta hasta la etapa final del proceso penalAsesoramiento integral desde la primera consulta hasta la etapa final del proceso penalAsesoramiento integral desde la primera consulta hasta la etapa final del proceso penal.",
+      "Brindo asesoría jurídica integral en diversas áreas del Derecho, con un enfoque claro y accesible para ayudarte a comprender tus derechos y las implicancias legales que puedan afectar tus intereses, todo basado en la normativa vigente y los principios éticos del Derecho.",
   },
   {
     id: 2,
-    title: "Asuntos civiles",
+    title: "Derecho y tecnología",
     description:
-      "Contratos, arrendamientos, cobros, etc. Representación legal en juicioContratos, arrendamientos, cobros, etc. Representación legal en juicioContratos, arrendamientos, cobros, etc. Representación legal en juicioContratos, arrendamientos, cobros, etc. Representación legal en juicio.",
+      "Ofrezco orientación sobre las implicancias legales y regulatorias de la tecnología, con especial enfoque en Inteligencia Artificial. Ayudo a comprender cómo la ley interactúa con la innovación tecnológica y cómo las empresas y particulares deben adaptarse a este nuevo panorama legal.",
   },
   {
     id: 3,
     title: "Derecho de familia",
     description:
-      "Divorcios, custodia de menores, pensiones alimenticias.Divorcios, custodia de menores, pensiones alimenticias.Divorcios, custodia de menores, pensiones alimenticias.Divorcios, custodia de menores, pensiones alimenticias.Divorcios, custodia de menores, pensiones alimenticias.",
+      "Brindo asesoría en temas relacionados con el Derecho de Familia, buscando soluciones adecuadas para cada situación, con un enfoque empático y respetuoso de las necesidades de los involucrados en procesos como separaciones, acuerdos de custodia y otros asuntos familiares.",
   },
   {
     id: 4,
-    title: "Derecho laboral",
+    title: "Capacitaciones",
     description:
-      "Despidos, indemnizaciones, reclamos laboralesDespidos, indemnizaciones, reclamos laboralesDespidos, indemnizaciones, reclamos laboralesDespidos, indemnizaciones, reclamos laboralesDespidos, indemnizaciones, reclamos laborales.",
+      "Ofrezco capacitaciones en temas de Derecho y Tecnología, con el objetivo de fomentar la alfabetización digital. A través de mis sesiones, busco proporcionar una comprensión clara de cómo las nuevas tecnologías, especialmente la Inteligencia Artificial, afectan el panorama legal y social.",
   },
 ];
+
 
 function Services() {
   return (

@@ -39,7 +39,8 @@ module.exports = {
       },
       backgroundImage: {
         "custom-bg": "url('/bg1.webp')",
-        palace: "url('/palace.webp')",
+        "palace": "url('/palace.webp')",
+        "contacto": "url('/contacto.jpg')",
       },
     },
   },

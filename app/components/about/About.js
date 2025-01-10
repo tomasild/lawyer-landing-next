@@ -16,11 +16,14 @@ export const About = () => {
           <p className="text-black text-[0.9rem] md:text-[1.2rem] max-w-2xl text-pretty md:text-balance leading-relaxed drop-shadow-lg">
             Egresada en Derecho e investigadora, actualmente dedico mi trabajo
             al estudio de las implicancias legales, éticas y regulatorias
-            asociadas a la Inteligencia Artificial(IA). Mi principal interés
-            radica en crear contenido especializado sobre Inteligencia
-            Artificial(IA), con el objetivo de que este contribuya
-            significativamente a fomentar la alfabetización digital a través de
-            las redes sociales.
+            asociadas a la Inteligencia Artificial. Siento una genuina
+            fascinación por las nuevas tecnologías que tienen el potencial para
+            impactar en el ámbito legal. Soy ayudante de la cátedra de Derecho y
+            Tecnología impartida por la Facultad de Derecho de la Universidad de
+            Valparaíso. Mi principal interes es la creación de contenido
+            especializado sobre Inteligencia Artificial, con el objetivo de que
+            este contribuya a fomentar la alfabetización digital a través de
+            redes sociales.
           </p>
         </article>
         <figure className="mx-4 md:mx-0 flex justify-center items-center">

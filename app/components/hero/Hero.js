@@ -33,9 +33,9 @@ const Hero = () => {
             </p>
           </div>
           <div className="flex gap-6 justify-center">
-            <IoLogoWhatsapp className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer hover:text-otis-400 transition duration-100 transform hover:scale-110" />
-            <RiInstagramFill className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer hover:text-otis-400 transition duration-100 transform hover:scale-110" />
-            <IoLogoTiktok className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer hover:text-otis-400 transition duration1300 transform hover:scale-110" />
+            <IoLogoWhatsapp className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer hover:text-green-600 transition duration-100 transform hover:scale-110" />
+            <RiInstagramFill className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer hover:text-fuchsia-600 transition duration-100 transform hover:scale-110" />
+            <IoLogoTiktok className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer hover:text-pink-600 transition duration1300 transform hover:scale-110" />
             <IoLogoLinkedin className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] cursor-pointer hover:text-otis-400 transition duration-100 transform hover:scale-110" />
           </div>
         </article>
