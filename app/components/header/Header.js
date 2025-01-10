@@ -42,7 +42,7 @@ export const Header = () => {
             id="primary-menu"
             className={`${
               menuOpen ? "flex" : "hidden"
-            } flex-col border-t border-otis-100 border-opacity-50 space-y-4 py-4 md:py-0 md:space-y-0 md:flex md:flex-row items-center md:space-x-6 text-lg text-white font-bold bg-otis-950 bg-opacity-70 md:bg-transparent w-full md:w-auto absolute md:relative top-full left-0 md:top-0 md:left-auto shadow-lg md:shadow-none`}
+            } flex-col  space-y-4 py-4 md:py-0 md:space-y-0 md:flex md:flex-row items-center md:space-x-6 text-lg text-white font-bold bg-otis-950 bg-opacity-70 md:bg-transparent w-full md:w-auto absolute md:relative top-full left-0 md:top-0 md:left-auto shadow-lg md:shadow-none`}
             role="menu"
           >
             <li role="none">
@@ -65,7 +65,7 @@ export const Header = () => {
                 className="px-4 py-3 hover:bg-otis-700 w-full text-center md:w-auto"
                 onClick={() => setMenuOpen(false)}
               >
-                Sobre mi
+                Sobre mí
               </Link>
             </li>
             <li role="none" className="hidden md:block">
