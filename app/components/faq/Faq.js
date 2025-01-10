@@ -20,7 +20,7 @@ const FaqItem = ({ faq, index, isOpen, onToggle }) => {
           aria-expanded={isOpen}
           aria-labelledby={faqId}
         >
-          <span className="text-[1.2rem] md:text-[2rem] pr-4">{faq.question}</span>
+          <span className="text-[1.2rem] md:text-[1.5rem] pr-4">{faq.question}</span>
           <span>
             {isOpen ? (
               <HiChevronUp className="text-white text-xl md:text-2xl transition duration-200" />
@@ -83,7 +83,7 @@ const Faq = () => {
     >
       <div className="container mx-auto relative z-10 flex gap-10 flex-col lg:flex-row items-start justify-between">
         <article className="flex flex-col items-start space-y-4 md:space-y-8 w-full lg:w-2/3 ">
-          <h2 className="text-[2rem] md:text-[4rem] font-bold text-center text-otis-950">
+          <h2 className="text-[2rem] md:text-[3rem] font-bold text-center text-otis-950">
             Preguntas Frecuentes
           </h2>
           <ul className="space-y-4 w-full">

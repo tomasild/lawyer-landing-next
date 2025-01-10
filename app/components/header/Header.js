@@ -22,7 +22,7 @@ export const Header = () => {
           {/* Logo */}
           <Link
             href="/"
-            aria-label="Go to homepage"
+            aria-label="Ir al Inicio"
             className="text-2xl md:text-5xl"
           >
             <GiArtificialHive />
@@ -47,19 +47,6 @@ export const Header = () => {
           >
             <li role="none">
               <Link
-                href="#services"
-                role="menuitem"
-                className="px-4 py-3 hover:bg-otis-700 w-full text-center md:w-auto"
-                onClick={() => setMenuOpen(false)}
-              >
-                Servicios
-              </Link>
-            </li>
-            <li role="none" className="hidden md:block">
-              <span className="text-2xl font-bold">·</span>
-            </li>
-            <li role="none">
-              <Link
                 href="#about"
                 role="menuitem"
                 className="px-4 py-3 hover:bg-otis-700 w-full text-center md:w-auto"
@@ -73,7 +60,7 @@ export const Header = () => {
             </li>
             <li role="none">
               <Link
-                href="#quote"
+                href="#purpose"
                 role="menuitem"
                 className="px-4 py-3 hover:bg-otis-700 w-full text-center md:w-auto"
                 onClick={() => setMenuOpen(false)}
@@ -81,6 +68,19 @@ export const Header = () => {
                 Misión
               </Link>
             </li>
+            <li role="none" className="hidden md:block">
+              <span className="text-2xl font-bold">·</span>
+            </li>
+            <li role="none">
+              <Link
+                href="#services"
+                role="menuitem"
+                className="px-4 py-3 hover:bg-otis-700 w-full text-center md:w-auto"
+                onClick={() => setMenuOpen(false)}
+              >
+                Servicios
+              </Link>
+            </li>{" "}
             <li role="none" className="hidden md:block">
               <span className="text-2xl font-bold">·</span>
             </li>

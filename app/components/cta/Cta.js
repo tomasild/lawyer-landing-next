@@ -4,13 +4,14 @@ import Link from "next/link";
 const Cta = () => {
   return (
     <section
+      id="contact"
       className="bg-otis-950 text-white py-14 px-4 sm:px-6 lg:px-8"
       aria-labelledby="cta-heading"
     >
       <div className="max-w-4xl mx-auto text-center">
         <h2
           id="cta-heading"
-          className="text-[2rem] md:text-[4rem] leading-tight text-pretty"
+          className="text-[2rem] md:text-[3rem] leading-tight text-pretty"
         >
           ¿Necesitas asesoría legal en tecnología o asuntos civiles?
         </h2>

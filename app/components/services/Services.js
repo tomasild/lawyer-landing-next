@@ -36,7 +36,7 @@ function Services() {
     >
       <div className="absolute inset-0 bg-otis-100 opacity-20 z-0"></div>
       <div className="container mx-auto relative z-10">
-        <h2 className="text-[2rem] md:text-[4rem] font-bold text-center mb-8 text-otis-950">
+        <h2 className="text-[2rem] md:text-[3rem] font-bold text-center mb-8 text-otis-950">
           Servicios
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2  gap-6 mx-4 md:mx-0">

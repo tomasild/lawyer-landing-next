@@ -10,7 +10,7 @@ export const About = () => {
           <div className="bg-otis-800 p-4 rounded-full flex items-center justify-center text-[2rem] md:text-[5rem]">
             <GiScales />
           </div>
-          <h2 className="text-[2rem] md:text-[4rem] font-bold text-center text-otis-950">
+          <h2 className="text-[2rem] md:text-[3rem] font-bold text-center text-otis-950">
             Sobre mí
           </h2>
           <p className="text-black text-[0.9rem] md:text-[1.2rem] max-w-2xl text-pretty md:text-balance leading-relaxed drop-shadow-lg">
