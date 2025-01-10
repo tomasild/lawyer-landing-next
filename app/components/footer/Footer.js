@@ -1,7 +1,8 @@
 import React from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
-import { IoLogoTiktok } from "react-icons/io5";
+import { IoLogoTiktok, IoLogoLinkedin  } from "react-icons/io5";
+
 
 const Footer = () => {
   return (
@@ -49,6 +50,14 @@ const Footer = () => {
             aria-label="TikTok"
           >
             <IoLogoTiktok className="text-[2rem] md:text-[3rem] lg:text-[4rem] cursor-pointer hover:text-otis-400 transition-all" />
+          </a>
+          <a
+            href="https://tiktok.com/@yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+          >
+            <IoLogoLinkedin className="text-[2rem] md:text-[3rem] lg:text-[4rem] cursor-pointer hover:text-otis-400 transition-all" />
           </a>
         </section>
       </div>

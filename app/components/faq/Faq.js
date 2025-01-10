@@ -8,14 +8,14 @@ const FaqItem = ({ faq, index, isOpen, onToggle }) => {
   const faqId = `faq-${index}`;
   return (
     <li
-      className="border w-full bg-otis-800 shadow-lg"
+      className="border w-full bg-otis-800 shadow-xl"
       role="region"
       aria-label={`Pregunta ${index + 1}`}
     >
       <h3 id={faqId} className="text-[1.2rem] md:text-[2rem]">
         <button
           type="button"
-          className="w-full text-left font-bold text-white bg-otis-900 p-4 rounded-lg flex justify-between items-center transition duration-200 focus:ring-2 focus:ring-inset focus:ring-otis-200 focus:ring-offset-1"
+          className="w-full text-left font-bold text-white bg-otis-900 p-4  flex justify-between items-center transition duration-200 focus:ring-2 focus:ring-inset focus:ring-otis-200 focus:ring-offset-1"
           onClick={() => onToggle(index)}
           aria-expanded={isOpen}
           aria-labelledby={faqId}

@@ -1,7 +1,7 @@
 import React from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
-import { IoLogoTiktok } from "react-icons/io5";
+import { IoLogoTiktok, IoLogoLinkedin  } from "react-icons/io5";
 
 const Hero = () => {
   return (
@@ -28,15 +28,15 @@ const Hero = () => {
               ¡Hola!, soy Ayelén Paillal
             </h1>
             <p className="text-[1rem] md:text-[2.5rem] font-bold mb-6 text-balance">
-              Abogada | Especialista en inteligencia artificial | Investigadora
-              de implicaciones legales de la IA | Asesoría legal en áreas de
-              derecho civil, familiar y tecnológico.
+              Egresada en Derecho | Investigadora de las implicancias legales y
+              éticas de la Inteligencia Artificial | Creadora de contenido
             </p>
           </div>
           <div className="flex gap-6 justify-center">
-            <IoLogoWhatsapp className="text-[2rem] md:text-[4rem] cursor-pointer hover:text-otis-400 " />
-            <RiInstagramFill className="text-[2rem] md:text-[4rem] cursor-pointer hover:text-otis-400 " />
-            <IoLogoTiktok className="text-[2rem] md:text-[4rem] cursor-pointer hover:text-otis-400 " />
+            <IoLogoWhatsapp className="text-[2rem] md:text-[4rem] cursor-pointer hover:text-otis-400 transition duration-100 transform hover:scale-110" />
+            <RiInstagramFill className="text-[2rem] md:text-[4rem] cursor-pointer hover:text-otis-400 transition duration-100 transform hover:scale-110" />
+            <IoLogoTiktok className="text-[2rem] md:text-[4rem] cursor-pointer hover:text-otis-400 transition duration1300 transform hover:scale-110" />
+            <IoLogoLinkedin className="text-[2rem] md:text-[4rem] cursor-pointer hover:text-otis-400 transition duration-100 transform hover:scale-110" />
           </div>
         </article>
       </div>

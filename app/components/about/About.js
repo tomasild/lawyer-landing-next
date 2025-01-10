@@ -14,25 +14,21 @@ export const About = () => {
             Sobre mí
           </h2>
           <p className="text-black text-[0.9rem] md:text-[1.2rem] max-w-2xl text-pretty md:text-balance leading-relaxed drop-shadow-lg">
-            oy abogada recién egresada con un enfoque en la investigación de la
-            inteligencia artificial y sus implicaciones legales, éticas y
-            regulatorias. Mi interés se centra en comprender cómo las nuevas
-            tecnologías afectan el marco jurídico y cómo garantizar una
-            regulación justa y adecuada. Además, brindo asesoría legal en
-            diversas áreas, incluyendo derecho civil y familiar, con un
-            compromiso de proporcionar soluciones legales claras, éticas y
-            adaptadas a las necesidades de cada cliente." Esta frase proporciona
-            una visión más amplia de tu enfoque y compromiso como abogada,
-            destacando tanto tu especialización como tu capacidad para abordar
-            diferentes áreas del derecho. complejos.
+            Egresada en Derecho e investigadora, actualmente dedico mi trabajo
+            al estudio de las implicancias legales, éticas y regulatorias
+            asociadas a la Inteligencia Artificial(IA). Mi principal interés
+            radica en crear contenido especializado sobre Inteligencia
+            Artificial(IA), con el objetivo de que este contribuya
+            significativamente a fomentar la alfabetización digital a través de
+            las redes sociales.
           </p>
         </article>
         <figure className="mx-4 md:mx-0 flex justify-center items-center">
           <Image
             src="/bg1.webp"
             alt="Foto de abogada Ayelén"
-            width={800} 
-            height={600} 
+            width={800}
+            height={600}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover"
             priority
